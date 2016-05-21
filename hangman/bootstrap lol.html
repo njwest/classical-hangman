@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Hangman</title>
+	<title>Classical Hangman</title>
 
 	<!-- Bootstrap File -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -17,8 +17,8 @@
 	<div class="container">
 		<!-- Jumbotron with Title -->
 		<div class="jumbotron">
-			<h1 class="text-center"><strong>Captain Planet: The Game!</strong></h1>
-			<h4 class="text-center">Rated M for Mature</h4>
+			<h1 class="text-center"><strong>Classical Hangman</strong></h1>
+			<h4 class="text-center"></h4>
 			<hr>
 			<div class="text-center">
 			    <button class="btn btn-warning btn-xs themeButton"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>		  	
@@ -45,11 +45,26 @@
 				  </div>
 				</div>
 
-			<!-- Right Panel (Captain Planet Hero)-->
+			<!--Hangman Area-->
 			<div class="col-lg-6">
+				<p> Press any key to get started, bro!</p>
+				
+				<div class="wins">
+					mdk
+				</div>
 
-				<!-- Captain Planet Image -->
-				<img src="http://screencrush.com/442/files/2013/06/captain-planet-01.jpg" alt="" class="img captainplanet" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
+				<div class="word">
+				 <input type="text" id="word" onkeyup="hangman()">
+				</div>
+
+				<div class="guessCounter">
+				 dskml
+				</div>
+
+				<div class="lettersGuessed">
+				skdmflsd
+				</div>
+			
 	
 			</div>
 		</div>
@@ -57,7 +72,13 @@
 	
 	<script>
 		// Javascript function that wraps everything
-		$(document).ready(function(){
+		$(document).ready(function(){	
+
+			function hangman(){
+				var letter = document.getElementById("word").value;
+					
+			}
+
 
 			// Gets Link for Theme Song
 	        var audioElement = document.createElement('audio');
